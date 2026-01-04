@@ -1,0 +1,5 @@
+*~
+target
+ios/BlueGate/.DS_Store
+tools/*.json
+tools/*.bin
