@@ -13,14 +13,12 @@ esp-alloc = { version = "0.9.0" }
 esp-println = { version = "0.16.0", features = ["log-04"] }
 esp-radio = { version = "0.17.0", features = ["ble", "log-04", "unstable"] }
 esp-rtos = { version = "0.2.0", features = ["embassy", "esp-alloc", "esp-radio", "log-04"] }
-#trouble-example-apps = { version = "0.1.0", path = "../apps", features = ["log"] }
-trouble-host = { path = "../trouble/host", features = ["default-packet-pool-mtu-255", "derive", "scan"] }
+trouble-host = { version = "0.5.0", features = ["default-packet-pool-mtu-255", "derive", "scan"] }
 
 # for 'ble_bas_peripheral_bonding'
 embassy-embedded-hal = "0.5.0"
 esp-storage = { version = "0.8.1" }
 
-#trouble-host = { path = "../../host", features = ["derive", "scan"] }
 bt-hci = { version = "0.6" }
 embassy-futures = "0.1.1"
 embassy-sync = { version = "0.7" }
@@ -89,13 +87,3 @@ lto = 'thin'
 opt-level = 3
 overflow-checks = false
 
-# Enable for using latest 'main'
-#[patch.crates-io]
-#esp-alloc =             { git = "https://github.com/esp-rs/esp-hal.git" }
-#esp-backtrace =         { git = "https://github.com/esp-rs/esp-hal.git" }
-#esp-bootloader-esp-idf ={ git = "https://github.com/esp-rs/esp-hal.git" }
-#esp-hal =               { git = "https://github.com/esp-rs/esp-hal.git" }
-#esp-println =           { git = "https://github.com/esp-rs/esp-hal.git" }
-#esp-radio =             { git = "https://github.com/esp-rs/esp-hal.git" }
-#esp-rtos =              { git = "https://github.com/esp-rs/esp-hal.git" }
-#esp-storage =           { git = "https://github.com/esp-rs/esp-hal.git" }
